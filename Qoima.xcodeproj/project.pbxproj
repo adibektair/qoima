@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA5EF71424631D4000A9BFD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF71324631D4000A9BFD3 /* AppDelegate.swift */; };
+		AA5EF71624631D4000A9BFD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF71524631D4000A9BFD3 /* SceneDelegate.swift */; };
+		AA5EF71824631D4000A9BFD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF71724631D4000A9BFD3 /* ViewController.swift */; };
+		AA5EF71B24631D4000A9BFD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5EF71924631D4000A9BFD3 /* Main.storyboard */; };
+		AA5EF71D24631D4500A9BFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5EF71C24631D4500A9BFD3 /* Assets.xcassets */; };
+		AA5EF72024631D4500A9BFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5EF71E24631D4500A9BFD3 /* LaunchScreen.storyboard */; };
+		AA5EF72B24631D4500A9BFD3 /* QoimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF72A24631D4500A9BFD3 /* QoimaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA5EF72724631D4500A9BFD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5EF70824631D4000A9BFD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5EF70F24631D4000A9BFD3;
+			remoteInfo = Qoima;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA5EF71024631D4000A9BFD3 /* Qoima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qoima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5EF71324631D4000A9BFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5EF71524631D4000A9BFD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA5EF71724631D4000A9BFD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA5EF71A24631D4000A9BFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA5EF71C24631D4500A9BFD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5EF71F24631D4500A9BFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA5EF72124631D4500A9BFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5EF72624631D4500A9BFD3 /* QoimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QoimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5EF72A24631D4500A9BFD3 /* QoimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoimaTests.swift; sourceTree = "<group>"; };
+		AA5EF72C24631D4500A9BFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA5EF70D24631D4000A9BFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5EF72324631D4500A9BFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA5EF70724631D4000A9BFD3 = {
+			isa = PBXGroup;
+			children = (
+				AA5EF71224631D4000A9BFD3 /* Qoima */,
+				AA5EF72924631D4500A9BFD3 /* QoimaTests */,
+				AA5EF71124631D4000A9BFD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5EF71124631D4000A9BFD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5EF71024631D4000A9BFD3 /* Qoima.app */,
+				AA5EF72624631D4500A9BFD3 /* QoimaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5EF71224631D4000A9BFD3 /* Qoima */ = {
+			isa = PBXGroup;
+			children = (
+				AA5EF71324631D4000A9BFD3 /* AppDelegate.swift */,
+				AA5EF71524631D4000A9BFD3 /* SceneDelegate.swift */,
+				AA5EF71724631D4000A9BFD3 /* ViewController.swift */,
+				AA5EF71924631D4000A9BFD3 /* Main.storyboard */,
+				AA5EF71C24631D4500A9BFD3 /* Assets.xcassets */,
+				AA5EF71E24631D4500A9BFD3 /* LaunchScreen.storyboard */,
+				AA5EF72124631D4500A9BFD3 /* Info.plist */,
+			);
+			path = Qoima;
+			sourceTree = "<group>";
+		};
+		AA5EF72924631D4500A9BFD3 /* QoimaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5EF72A24631D4500A9BFD3 /* QoimaTests.swift */,
+				AA5EF72C24631D4500A9BFD3 /* Info.plist */,
+			);
+			path = QoimaTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA5EF70F24631D4000A9BFD3 /* Qoima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5EF72F24631D4500A9BFD3 /* Build configuration list for PBXNativeTarget "Qoima" */;
+			buildPhases = (
+				AA5EF70C24631D4000A9BFD3 /* Sources */,
+				AA5EF70D24631D4000A9BFD3 /* Frameworks */,
+				AA5EF70E24631D4000A9BFD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qoima;
+			productName = Qoima;
+			productReference = AA5EF71024631D4000A9BFD3 /* Qoima.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA5EF72524631D4500A9BFD3 /* QoimaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5EF73224631D4500A9BFD3 /* Build configuration list for PBXNativeTarget "QoimaTests" */;
+			buildPhases = (
+				AA5EF72224631D4500A9BFD3 /* Sources */,
+				AA5EF72324631D4500A9BFD3 /* Frameworks */,
+				AA5EF72424631D4500A9BFD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5EF72824631D4500A9BFD3 /* PBXTargetDependency */,
+			);
+			name = QoimaTests;
+			productName = QoimaTests;
+			productReference = AA5EF72624631D4500A9BFD3 /* QoimaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5EF70824631D4000A9BFD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = iitu;
+				TargetAttributes = {
+					AA5EF70F24631D4000A9BFD3 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					AA5EF72524631D4500A9BFD3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = AA5EF70F24631D4000A9BFD3;
+					};
+				};
+			};
+			buildConfigurationList = AA5EF70B24631D4000A9BFD3 /* Build configuration list for PBXProject "Qoima" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5EF70724631D4000A9BFD3;
+			productRefGroup = AA5EF71124631D4000A9BFD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA5EF70F24631D4000A9BFD3 /* Qoima */,
+				AA5EF72524631D4500A9BFD3 /* QoimaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5EF70E24631D4000A9BFD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5EF72024631D4500A9BFD3 /* LaunchScreen.storyboard in Resources */,
+				AA5EF71D24631D4500A9BFD3 /* Assets.xcassets in Resources */,
+				AA5EF71B24631D4000A9BFD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5EF72424631D4500A9BFD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA5EF70C24631D4000A9BFD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5EF71824631D4000A9BFD3 /* ViewController.swift in Sources */,
+				AA5EF71424631D4000A9BFD3 /* AppDelegate.swift in Sources */,
+				AA5EF71624631D4000A9BFD3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5EF72224631D4500A9BFD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5EF72B24631D4500A9BFD3 /* QoimaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA5EF72824631D4500A9BFD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5EF70F24631D4000A9BFD3 /* Qoima */;
+			targetProxy = AA5EF72724631D4500A9BFD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA5EF71924631D4000A9BFD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5EF71A24631D4000A9BFD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA5EF71E24631D4500A9BFD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5EF71F24631D4500A9BFD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA5EF72D24631D4500A9BFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA5EF72E24631D4500A9BFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA5EF73024631D4500A9BFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWSS3Q7L56;
+				INFOPLIST_FILE = Qoima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.Qoima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA5EF73124631D4500A9BFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWSS3Q7L56;
+				INFOPLIST_FILE = Qoima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.Qoima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA5EF73324631D4500A9BFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWSS3Q7L56;
+				INFOPLIST_FILE = QoimaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.QoimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qoima.app/Qoima";
+			};
+			name = Debug;
+		};
+		AA5EF73424631D4500A9BFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWSS3Q7L56;
+				INFOPLIST_FILE = QoimaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.QoimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qoima.app/Qoima";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA5EF70B24631D4000A9BFD3 /* Build configuration list for PBXProject "Qoima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5EF72D24631D4500A9BFD3 /* Debug */,
+				AA5EF72E24631D4500A9BFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5EF72F24631D4500A9BFD3 /* Build configuration list for PBXNativeTarget "Qoima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5EF73024631D4500A9BFD3 /* Debug */,
+				AA5EF73124631D4500A9BFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5EF73224631D4500A9BFD3 /* Build configuration list for PBXNativeTarget "QoimaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5EF73324631D4500A9BFD3 /* Debug */,
+				AA5EF73424631D4500A9BFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA5EF70824631D4000A9BFD3 /* Project object */;
+}
