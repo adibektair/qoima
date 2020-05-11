@@ -3,10 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12311278F221BCB06AB61167 /* Pods_Qoima.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3D334C487830DCBCFDA3F /* Pods_Qoima.framework */; };
+		AA1E5CD1246486EB006F9F69 /* AuthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1E5CD0246486EB006F9F69 /* AuthBuilder.swift */; };
+		AA1E5CD42464886C006F9F69 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1E5CD32464886C006F9F69 /* WelcomePresenter.swift */; };
+		AA1E5CD624648901006F9F69 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1E5CD524648901006F9F69 /* WelcomeViewController.swift */; };
+		AA1E5CD9246489A5006F9F69 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1E5CD8246489A5006F9F69 /* Slider.swift */; };
+		AA3B87EC2469439700DD8D06 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87EB2469439700DD8D06 /* AddItemViewController.swift */; };
+		AA3B87EE246943A300DD8D06 /* AddItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87ED246943A300DD8D06 /* AddItemPresenter.swift */; };
+		AA3B87F024694E3E00DD8D06 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87EF24694E3E00DD8D06 /* Parameters.swift */; };
+		AA3B87F22469757300DD8D06 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87F12469757300DD8D06 /* Categories.swift */; };
+		AA3B87F424697E5F00DD8D06 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87F324697E5F00DD8D06 /* CategoryView.swift */; };
+		AA3B87F62469B9AB00DD8D06 /* AddItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87F52469B9AB00DD8D06 /* AddItemResponse.swift */; };
+		AA3B87FA2469C5E300DD8D06 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87F82469C5E300DD8D06 /* ItemsViewController.swift */; };
+		AA3B87FB2469C5E300DD8D06 /* ItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B87F92469C5E300DD8D06 /* ItemsViewController.xib */; };
+		AA3B87FE2469C6B000DD8D06 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B87FC2469C6B000DD8D06 /* ItemCollectionViewCell.swift */; };
+		AA3B87FF2469C6B000DD8D06 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3B87FD2469C6B000DD8D06 /* ItemCollectionViewCell.xib */; };
 		AA5EF71424631D4000A9BFD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF71324631D4000A9BFD3 /* AppDelegate.swift */; };
 		AA5EF71624631D4000A9BFD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF71524631D4000A9BFD3 /* SceneDelegate.swift */; };
 		AA5EF71824631D4000A9BFD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF71724631D4000A9BFD3 /* ViewController.swift */; };
@@ -14,6 +29,32 @@
 		AA5EF71D24631D4500A9BFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5EF71C24631D4500A9BFD3 /* Assets.xcassets */; };
 		AA5EF72024631D4500A9BFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5EF71E24631D4500A9BFD3 /* LaunchScreen.storyboard */; };
 		AA5EF72B24631D4500A9BFD3 /* QoimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF72A24631D4500A9BFD3 /* QoimaTests.swift */; };
+		AA5EF73E24633C0400A9BFD3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73624633C0400A9BFD3 /* Colors.swift */; };
+		AA5EF73F24633C0400A9BFD3 /* StackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73724633C0400A9BFD3 /* StackViewExtensions.swift */; };
+		AA5EF74024633C0400A9BFD3 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73824633C0400A9BFD3 /* StringExtension.swift */; };
+		AA5EF74124633C0400A9BFD3 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73924633C0400A9BFD3 /* ViewControllerExtension.swift */; };
+		AA5EF74224633C0400A9BFD3 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73A24633C0400A9BFD3 /* ViewExtensions.swift */; };
+		AA5EF74324633C0400A9BFD3 /* ScrollStackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73B24633C0400A9BFD3 /* ScrollStackController.swift */; };
+		AA5EF74424633C0400A9BFD3 /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73C24633C0400A9BFD3 /* LabelExtensions.swift */; };
+		AA5EF74524633C0400A9BFD3 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73D24633C0400A9BFD3 /* UIViewExtensions.swift */; };
+		AA5EF74824633C8300A9BFD3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF74724633C8300A9BFD3 /* Router.swift */; };
+		AAE539512466E41D000B371B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE539502466E41D000B371B /* Button.swift */; };
+		AAE539542466EB68000B371B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE539532466EB68000B371B /* SignUpPresenter.swift */; };
+		AAE539562466EBFC000B371B /* SignUpRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE539552466EBFC000B371B /* SignUpRequestModel.swift */; };
+		AAE539582466ED38000B371B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE539572466ED38000B371B /* SignUpViewController.swift */; };
+		AAE5395B2466FCEB000B371B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5395A2466FCEB000B371B /* Constants.swift */; };
+		AAE5395D2466FF31000B371B /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5395C2466FF31000B371B /* NetworkLayer.swift */; };
+		AAE539602467006B000B371B /* StandartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5395F2467006B000B371B /* StandartResponse.swift */; };
+		AAE53963246707FB000B371B /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE53962246707FB000B371B /* SignInPresenter.swift */; };
+		AAE5396524670925000B371B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5396424670925000B371B /* SignInViewController.swift */; };
+		AAE5396724670C99000B371B /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5396624670C99000B371B /* LoginResponse.swift */; };
+		AAE5396A24670ED8000B371B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5396924670ED8000B371B /* Helper.swift */; };
+		AAE5396D24672812000B371B /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5396C24672812000B371B /* MainRouter.swift */; };
+		AAE5396F2467281A000B371B /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5396E2467281A000B371B /* MainBuilder.swift */; };
+		AAE53972246728D4000B371B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE53971246728D4000B371B /* MainPresenter.swift */; };
+		AAE5397424672967000B371B /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5397324672967000B371B /* MainPageViewController.swift */; };
+		AAE5397624672A34000B371B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5397524672A34000B371B /* TabBarViewController.swift */; };
+		E6FCD885EF285DA18A037DE2 /* Pods_QoimaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5603B827267D4DE98650DFAA /* Pods_QoimaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +68,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040A3A32B8057557A38461F7 /* Pods-Qoima.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qoima.debug.xcconfig"; path = "Target Support Files/Pods-Qoima/Pods-Qoima.debug.xcconfig"; sourceTree = "<group>"; };
+		33C3D334C487830DCBCFDA3F /* Pods_Qoima.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qoima.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F96A88D0CC64483001C6F56 /* Pods-QoimaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoimaTests.release.xcconfig"; path = "Target Support Files/Pods-QoimaTests/Pods-QoimaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5603B827267D4DE98650DFAA /* Pods_QoimaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QoimaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710333EE3844F343CFB010B6 /* Pods-Qoima.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qoima.release.xcconfig"; path = "Target Support Files/Pods-Qoima/Pods-Qoima.release.xcconfig"; sourceTree = "<group>"; };
+		AA1E5CD0246486EB006F9F69 /* AuthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBuilder.swift; sourceTree = "<group>"; };
+		AA1E5CD32464886C006F9F69 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		AA1E5CD524648901006F9F69 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		AA1E5CD8246489A5006F9F69 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		AA3B87EB2469439700DD8D06 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		AA3B87ED246943A300DD8D06 /* AddItemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemPresenter.swift; sourceTree = "<group>"; };
+		AA3B87EF24694E3E00DD8D06 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		AA3B87F12469757300DD8D06 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		AA3B87F324697E5F00DD8D06 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		AA3B87F52469B9AB00DD8D06 /* AddItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemResponse.swift; sourceTree = "<group>"; };
+		AA3B87F82469C5E300DD8D06 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		AA3B87F92469C5E300DD8D06 /* ItemsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsViewController.xib; sourceTree = "<group>"; };
+		AA3B87FC2469C6B000DD8D06 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA3B87FD2469C6B000DD8D06 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		AA5EF71024631D4000A9BFD3 /* Qoima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qoima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5EF71324631D4000A9BFD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5EF71524631D4000A9BFD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +98,32 @@
 		AA5EF72624631D4500A9BFD3 /* QoimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QoimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5EF72A24631D4500A9BFD3 /* QoimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoimaTests.swift; sourceTree = "<group>"; };
 		AA5EF72C24631D4500A9BFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5EF73624633C0400A9BFD3 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AA5EF73724633C0400A9BFD3 /* StackViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewExtensions.swift; sourceTree = "<group>"; };
+		AA5EF73824633C0400A9BFD3 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		AA5EF73924633C0400A9BFD3 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		AA5EF73A24633C0400A9BFD3 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		AA5EF73B24633C0400A9BFD3 /* ScrollStackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollStackController.swift; sourceTree = "<group>"; };
+		AA5EF73C24633C0400A9BFD3 /* LabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelExtensions.swift; sourceTree = "<group>"; };
+		AA5EF73D24633C0400A9BFD3 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		AA5EF74724633C8300A9BFD3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		AAE539502466E41D000B371B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		AAE539532466EB68000B371B /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		AAE539552466EBFC000B371B /* SignUpRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequestModel.swift; sourceTree = "<group>"; };
+		AAE539572466ED38000B371B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AAE5395A2466FCEB000B371B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AAE5395C2466FF31000B371B /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		AAE5395F2467006B000B371B /* StandartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartResponse.swift; sourceTree = "<group>"; };
+		AAE53962246707FB000B371B /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		AAE5396424670925000B371B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AAE5396624670C99000B371B /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		AAE5396924670ED8000B371B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AAE5396C24672812000B371B /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		AAE5396E2467281A000B371B /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		AAE53971246728D4000B371B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		AAE5397324672967000B371B /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		AAE5397524672A34000B371B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C74DE5B619268FE085C327F0 /* Pods-QoimaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoimaTests.debug.xcconfig"; path = "Target Support Files/Pods-QoimaTests/Pods-QoimaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12311278F221BCB06AB61167 /* Pods_Qoima.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +139,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FCD885EF285DA18A037DE2 /* Pods_QoimaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87DB79F72BBA6C4E278EDE04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				040A3A32B8057557A38461F7 /* Pods-Qoima.debug.xcconfig */,
+				710333EE3844F343CFB010B6 /* Pods-Qoima.release.xcconfig */,
+				C74DE5B619268FE085C327F0 /* Pods-QoimaTests.debug.xcconfig */,
+				4F96A88D0CC64483001C6F56 /* Pods-QoimaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA1E5CD224648853006F9F69 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				AA1E5CD32464886C006F9F69 /* WelcomePresenter.swift */,
+				AA1E5CD524648901006F9F69 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		AA1E5CD724648992006F9F69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA1E5CD8246489A5006F9F69 /* Slider.swift */,
+				AAE539552466EBFC000B371B /* SignUpRequestModel.swift */,
+				AA3B87EF24694E3E00DD8D06 /* Parameters.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA3B87EA2469438200DD8D06 /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B87EB2469439700DD8D06 /* AddItemViewController.swift */,
+				AA3B87ED246943A300DD8D06 /* AddItemPresenter.swift */,
+			);
+			path = AddItem;
+			sourceTree = "<group>";
+		};
+		AA3B87F72469C5B900DD8D06 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B87F82469C5E300DD8D06 /* ItemsViewController.swift */,
+				AA3B87F92469C5E300DD8D06 /* ItemsViewController.xib */,
+				AA3B87FC2469C6B000DD8D06 /* ItemCollectionViewCell.swift */,
+				AA3B87FD2469C6B000DD8D06 /* ItemCollectionViewCell.xib */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		AA5EF70724631D4000A9BFD3 = {
 			isa = PBXGroup;
 			children = (
 				AA5EF71224631D4000A9BFD3 /* Qoima */,
 				AA5EF72924631D4500A9BFD3 /* QoimaTests */,
 				AA5EF71124631D4000A9BFD3 /* Products */,
+				87DB79F72BBA6C4E278EDE04 /* Pods */,
+				ACC5FCC12EB758267C791F4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +219,15 @@
 		AA5EF71224631D4000A9BFD3 /* Qoima */ = {
 			isa = PBXGroup;
 			children = (
+				AAE5396824670ECC000B371B /* Helpers */,
+				AAE5395E2467005A000B371B /* ResponseModels */,
+				AAE539592466FCD8000B371B /* Networking */,
+				AAE5394F2466E410000B371B /* Views */,
+				AA1E5CD724648992006F9F69 /* Models */,
+				AA5EF74624633C5B00A9BFD3 /* Auth */,
+				AAE5396B246727FB000B371B /* Main */,
+				AA3B87F72469C5B900DD8D06 /* Items */,
+				AA5EF73524633BB600A9BFD3 /* Other */,
 				AA5EF71324631D4000A9BFD3 /* AppDelegate.swift */,
 				AA5EF71524631D4000A9BFD3 /* SceneDelegate.swift */,
 				AA5EF71724631D4000A9BFD3 /* ViewController.swift */,
@@ -99,6 +248,118 @@
 			path = QoimaTests;
 			sourceTree = "<group>";
 		};
+		AA5EF73524633BB600A9BFD3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AA5EF73624633C0400A9BFD3 /* Colors.swift */,
+				AA5EF73C24633C0400A9BFD3 /* LabelExtensions.swift */,
+				AA5EF73B24633C0400A9BFD3 /* ScrollStackController.swift */,
+				AA5EF73724633C0400A9BFD3 /* StackViewExtensions.swift */,
+				AA5EF73824633C0400A9BFD3 /* StringExtension.swift */,
+				AA5EF73D24633C0400A9BFD3 /* UIViewExtensions.swift */,
+				AA5EF73924633C0400A9BFD3 /* ViewControllerExtension.swift */,
+				AA5EF73A24633C0400A9BFD3 /* ViewExtensions.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AA5EF74624633C5B00A9BFD3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AAE53961246707ED000B371B /* SignIn */,
+				AAE539522466EB52000B371B /* SignUp */,
+				AA1E5CD224648853006F9F69 /* Welcome */,
+				AA5EF74724633C8300A9BFD3 /* Router.swift */,
+				AA1E5CD0246486EB006F9F69 /* AuthBuilder.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AAE5394F2466E410000B371B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAE539502466E41D000B371B /* Button.swift */,
+				AA3B87F324697E5F00DD8D06 /* CategoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAE539522466EB52000B371B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				AAE539532466EB68000B371B /* SignUpPresenter.swift */,
+				AAE539572466ED38000B371B /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		AAE539592466FCD8000B371B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5395C2466FF31000B371B /* NetworkLayer.swift */,
+				AAE5395A2466FCEB000B371B /* Constants.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AAE5395E2467005A000B371B /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5395F2467006B000B371B /* StandartResponse.swift */,
+				AAE5396624670C99000B371B /* LoginResponse.swift */,
+				AA3B87F12469757300DD8D06 /* Categories.swift */,
+				AA3B87F52469B9AB00DD8D06 /* AddItemResponse.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		AAE53961246707ED000B371B /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				AAE53962246707FB000B371B /* SignInPresenter.swift */,
+				AAE5396424670925000B371B /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		AAE5396824670ECC000B371B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5396924670ED8000B371B /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AAE5396B246727FB000B371B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA3B87EA2469438200DD8D06 /* AddItem */,
+				AAE53970246728CA000B371B /* MainPage */,
+				AAE5396C24672812000B371B /* MainRouter.swift */,
+				AAE5396E2467281A000B371B /* MainBuilder.swift */,
+				AAE5397524672A34000B371B /* TabBarViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AAE53970246728CA000B371B /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				AAE53971246728D4000B371B /* MainPresenter.swift */,
+				AAE5397324672967000B371B /* MainPageViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		ACC5FCC12EB758267C791F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33C3D334C487830DCBCFDA3F /* Pods_Qoima.framework */,
+				5603B827267D4DE98650DFAA /* Pods_QoimaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +367,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5EF72F24631D4500A9BFD3 /* Build configuration list for PBXNativeTarget "Qoima" */;
 			buildPhases = (
+				98D639B0697FAA555926468F /* [CP] Check Pods Manifest.lock */,
 				AA5EF70C24631D4000A9BFD3 /* Sources */,
 				AA5EF70D24631D4000A9BFD3 /* Frameworks */,
 				AA5EF70E24631D4000A9BFD3 /* Resources */,
+				F8396D95243D58700182BEF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +386,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA5EF73224631D4500A9BFD3 /* Build configuration list for PBXNativeTarget "QoimaTests" */;
 			buildPhases = (
+				C77845295F990C10B96DDD85 /* [CP] Check Pods Manifest.lock */,
 				AA5EF72224631D4500A9BFD3 /* Sources */,
 				AA5EF72324631D4500A9BFD3 /* Frameworks */,
 				AA5EF72424631D4500A9BFD3 /* Resources */,
@@ -181,6 +445,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5EF72024631D4500A9BFD3 /* LaunchScreen.storyboard in Resources */,
+				AA3B87FB2469C5E300DD8D06 /* ItemsViewController.xib in Resources */,
+				AA3B87FF2469C6B000DD8D06 /* ItemCollectionViewCell.xib in Resources */,
 				AA5EF71D24631D4500A9BFD3 /* Assets.xcassets in Resources */,
 				AA5EF71B24631D4000A9BFD3 /* Main.storyboard in Resources */,
 			);
@@ -195,14 +461,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		98D639B0697FAA555926468F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qoima-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C77845295F990C10B96DDD85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QoimaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8396D95243D58700182BEF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qoima/Pods-Qoima-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qoima/Pods-Qoima-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qoima/Pods-Qoima-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA5EF70C24631D4000A9BFD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE5397624672A34000B371B /* TabBarViewController.swift in Sources */,
+				AA3B87EE246943A300DD8D06 /* AddItemPresenter.swift in Sources */,
+				AAE53963246707FB000B371B /* SignInPresenter.swift in Sources */,
+				AAE5396D24672812000B371B /* MainRouter.swift in Sources */,
+				AAE5397424672967000B371B /* MainPageViewController.swift in Sources */,
+				AA3B87FE2469C6B000DD8D06 /* ItemCollectionViewCell.swift in Sources */,
+				AA3B87F62469B9AB00DD8D06 /* AddItemResponse.swift in Sources */,
+				AA3B87F22469757300DD8D06 /* Categories.swift in Sources */,
+				AAE539542466EB68000B371B /* SignUpPresenter.swift in Sources */,
+				AA5EF74524633C0400A9BFD3 /* UIViewExtensions.swift in Sources */,
+				AA5EF73F24633C0400A9BFD3 /* StackViewExtensions.swift in Sources */,
+				AAE5396F2467281A000B371B /* MainBuilder.swift in Sources */,
+				AA1E5CD1246486EB006F9F69 /* AuthBuilder.swift in Sources */,
+				AAE5396A24670ED8000B371B /* Helper.swift in Sources */,
+				AAE539562466EBFC000B371B /* SignUpRequestModel.swift in Sources */,
+				AAE5396724670C99000B371B /* LoginResponse.swift in Sources */,
 				AA5EF71824631D4000A9BFD3 /* ViewController.swift in Sources */,
+				AA3B87FA2469C5E300DD8D06 /* ItemsViewController.swift in Sources */,
+				AA5EF74324633C0400A9BFD3 /* ScrollStackController.swift in Sources */,
+				AA3B87F024694E3E00DD8D06 /* Parameters.swift in Sources */,
+				AAE5396524670925000B371B /* SignInViewController.swift in Sources */,
+				AA5EF74824633C8300A9BFD3 /* Router.swift in Sources */,
+				AA1E5CD624648901006F9F69 /* WelcomeViewController.swift in Sources */,
+				AA5EF74224633C0400A9BFD3 /* ViewExtensions.swift in Sources */,
+				AA5EF74124633C0400A9BFD3 /* ViewControllerExtension.swift in Sources */,
+				AAE5395B2466FCEB000B371B /* Constants.swift in Sources */,
+				AAE539602467006B000B371B /* StandartResponse.swift in Sources */,
+				AA5EF74024633C0400A9BFD3 /* StringExtension.swift in Sources */,
+				AA1E5CD9246489A5006F9F69 /* Slider.swift in Sources */,
+				AA1E5CD42464886C006F9F69 /* WelcomePresenter.swift in Sources */,
+				AAE539582466ED38000B371B /* SignUpViewController.swift in Sources */,
+				AAE5395D2466FF31000B371B /* NetworkLayer.swift in Sources */,
+				AA3B87F424697E5F00DD8D06 /* CategoryView.swift in Sources */,
+				AA5EF74424633C0400A9BFD3 /* LabelExtensions.swift in Sources */,
+				AAE53972246728D4000B371B /* MainPresenter.swift in Sources */,
+				AA5EF73E24633C0400A9BFD3 /* Colors.swift in Sources */,
 				AA5EF71424631D4000A9BFD3 /* AppDelegate.swift in Sources */,
 				AA5EF71624631D4000A9BFD3 /* SceneDelegate.swift in Sources */,
+				AAE539512466E41D000B371B /* Button.swift in Sources */,
+				AA3B87EC2469439700DD8D06 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +661,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +715,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -360,6 +727,7 @@
 		};
 		AA5EF73024631D4500A9BFD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040A3A32B8057557A38461F7 /* Pods-Qoima.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +746,7 @@
 		};
 		AA5EF73124631D4500A9BFD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710333EE3844F343CFB010B6 /* Pods-Qoima.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +765,7 @@
 		};
 		AA5EF73324631D4500A9BFD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74DE5B619268FE085C327F0 /* Pods-QoimaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +788,7 @@
 		};
 		AA5EF73424631D4500A9BFD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F96A88D0CC64483001C6F56 /* Pods-QoimaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
