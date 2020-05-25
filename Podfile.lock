@@ -7,6 +7,13 @@ PODS:
   - Cosmos (21.0.0)
   - DropDown (2.3.13)
   - EasyPeasy (1.9.0)
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
   - ImageSlideshow (1.8.3):
     - ImageSlideshow/Core (= 1.8.3)
   - ImageSlideshow/Core (1.8.3)
@@ -23,6 +30,8 @@ DEPENDENCIES:
   - Cosmos (~> 21.0)
   - DropDown
   - EasyPeasy
+  - GoogleMaps
+  - GooglePlaces
   - ImageSlideshow (~> 1.8.3)
   - IQKeyboardManagerSwift
   - SDWebImage
@@ -35,6 +44,8 @@ SPEC REPOS:
     - Cosmos
     - DropDown
     - EasyPeasy
+    - GoogleMaps
+    - GooglePlaces
     - ImageSlideshow
     - IQKeyboardManagerSwift
     - ObjectMapper
@@ -47,11 +58,13 @@ SPEC CHECKSUMS:
   Cosmos: 3dfb6e4ba48bd48b8c9aa2a77048ae11ed114f96
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   EasyPeasy: 19a84ef8f8bbcf925b9fecc29d1d78b7dab96718
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
   ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
 
-PODFILE CHECKSUM: f8a8132a84bb271075ead1e9649cd793e506aa78
+PODFILE CHECKSUM: d8a0da7c74cabe70b0003ce4cf688f403f53fc6b
 
 COCOAPODS: 1.9.1

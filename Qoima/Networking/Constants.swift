@@ -24,4 +24,7 @@ class Constants: NSObject {
     public let getCategories = "http://laravel.memento-mori.site/api/get/categories"
     public let addItem = "http://laravel.memento-mori.site/api/additem"
     public let getItems = "http://laravel.memento-mori.site/api/listofitems"
+    public let planitem = "http://laravel.memento-mori.site/api/planitem"
+    public let deliverItem = "http://laravel.memento-mori.site/api/deliveritem"
+    public let qoimaList = "http://laravel.memento-mori.site/api/qoima/list"
 }

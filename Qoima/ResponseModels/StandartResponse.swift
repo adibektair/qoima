@@ -216,3 +216,217 @@ class Items : NSObject, NSCoding, Mappable{
     }
 
 }
+
+
+class PlanResponse : NSObject, NSCoding, Mappable{
+
+    var item : Item?
+    var success : Bool?
+
+
+    class func newInstance(map: Map) -> Mappable?{
+        return PlanResponse()
+    }
+    required init?(map: Map){}
+    private override init(){}
+
+    func mapping(map: Map)
+    {
+        item <- map["item"]
+        success <- map["success"]
+        
+    }
+
+    /**
+    * NSCoding required initializer.
+    * Fills the data from the passed decoder
+    */
+    @objc required init(coder aDecoder: NSCoder)
+    {
+         item = aDecoder.decodeObject(forKey: "item") as? Item
+         success = aDecoder.decodeObject(forKey: "success") as? Bool
+
+    }
+
+    /**
+    * NSCoding required method.
+    * Encodes mode properties into the decoder
+    */
+    @objc func encode(with aCoder: NSCoder)
+    {
+        if item != nil{
+            aCoder.encode(item, forKey: "item")
+        }
+        if success != nil{
+            aCoder.encode(success, forKey: "success")
+        }
+
+    }
+
+}
+
+
+class QoimaResponse : NSObject, NSCoding, Mappable{
+
+    var qoima : [Qoima]?
+    var succes : Bool?
+    var success : Bool?
+
+
+    class func newInstance(map: Map) -> Mappable?{
+        return QoimaResponse()
+    }
+    required init?(map: Map){}
+    private override init(){}
+
+    func mapping(map: Map)
+    {
+        qoima <- map["qoima"]
+        succes <- map["succes"]
+        success <- map["success"]
+        
+    }
+
+    /**
+    * NSCoding required initializer.
+    * Fills the data from the passed decoder
+    */
+    @objc required init(coder aDecoder: NSCoder)
+    {
+         qoima = aDecoder.decodeObject(forKey: "qoima") as? [Qoima]
+         succes = aDecoder.decodeObject(forKey: "succes") as? Bool
+         success = aDecoder.decodeObject(forKey: "success") as? Bool
+
+    }
+
+    /**
+    * NSCoding required method.
+    * Encodes mode properties into the decoder
+    */
+    @objc func encode(with aCoder: NSCoder)
+    {
+        if qoima != nil{
+            aCoder.encode(qoima, forKey: "qoima")
+        }
+        if succes != nil{
+            aCoder.encode(succes, forKey: "succes")
+        }
+        if success != nil{
+            aCoder.encode(success, forKey: "success")
+        }
+
+    }
+
+}
+class Qoima : NSObject, NSCoding, Mappable{
+
+    var address : String?
+    var createdAt : String?
+    var descriptionField : String?
+    var email : String?
+    var id : Int?
+    var latitude : String?
+    var longitude : String?
+    var mapAddress : String?
+    var name : String?
+    var phone : String?
+    var updatedAt : String?
+    var urlAddress : String?
+    var workingTime : String?
+
+
+    class func newInstance(map: Map) -> Mappable?{
+        return Qoima()
+    }
+    required init?(map: Map){}
+    private override init(){}
+
+    func mapping(map: Map)
+    {
+        address <- map["address"]
+        createdAt <- map["created_at"]
+        descriptionField <- map["description"]
+        email <- map["email"]
+        id <- map["id"]
+        latitude <- map["latitude"]
+        longitude <- map["longitude"]
+        mapAddress <- map["map_address"]
+        name <- map["name"]
+        phone <- map["phone"]
+        updatedAt <- map["updated_at"]
+        urlAddress <- map["url_address"]
+        workingTime <- map["working_time"]
+        
+    }
+
+    /**
+    * NSCoding required initializer.
+    * Fills the data from the passed decoder
+    */
+    @objc required init(coder aDecoder: NSCoder)
+    {
+         address = aDecoder.decodeObject(forKey: "address") as? String
+         createdAt = aDecoder.decodeObject(forKey: "created_at") as? String
+         descriptionField = aDecoder.decodeObject(forKey: "description") as? String
+         email = aDecoder.decodeObject(forKey: "email") as? String
+         id = aDecoder.decodeObject(forKey: "id") as? Int
+         latitude = aDecoder.decodeObject(forKey: "latitude") as? String
+         longitude = aDecoder.decodeObject(forKey: "longitude") as? String
+         mapAddress = aDecoder.decodeObject(forKey: "map_address") as? String
+         name = aDecoder.decodeObject(forKey: "name") as? String
+         phone = aDecoder.decodeObject(forKey: "phone") as? String
+         updatedAt = aDecoder.decodeObject(forKey: "updated_at") as? String
+         urlAddress = aDecoder.decodeObject(forKey: "url_address") as? String
+         workingTime = aDecoder.decodeObject(forKey: "working_time") as? String
+
+    }
+
+    /**
+    * NSCoding required method.
+    * Encodes mode properties into the decoder
+    */
+    @objc func encode(with aCoder: NSCoder)
+    {
+        if address != nil{
+            aCoder.encode(address, forKey: "address")
+        }
+        if createdAt != nil{
+            aCoder.encode(createdAt, forKey: "created_at")
+        }
+        if descriptionField != nil{
+            aCoder.encode(descriptionField, forKey: "description")
+        }
+        if email != nil{
+            aCoder.encode(email, forKey: "email")
+        }
+        if id != nil{
+            aCoder.encode(id, forKey: "id")
+        }
+        if latitude != nil{
+            aCoder.encode(latitude, forKey: "latitude")
+        }
+        if longitude != nil{
+            aCoder.encode(longitude, forKey: "longitude")
+        }
+        if mapAddress != nil{
+            aCoder.encode(mapAddress, forKey: "map_address")
+        }
+        if name != nil{
+            aCoder.encode(name, forKey: "name")
+        }
+        if phone != nil{
+            aCoder.encode(phone, forKey: "phone")
+        }
+        if updatedAt != nil{
+            aCoder.encode(updatedAt, forKey: "updated_at")
+        }
+        if urlAddress != nil{
+            aCoder.encode(urlAddress, forKey: "url_address")
+        }
+        if workingTime != nil{
+            aCoder.encode(workingTime, forKey: "working_time")
+        }
+
+    }
+
+}

@@ -15,7 +15,8 @@ pod 'DropDown'
 pod "EasyPeasy"
 pod 'ImageSlideshow', '~> 1.8.3'
 pod 'IQKeyboardManagerSwift'
-
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
   target 'QoimaTests' do
     inherit! :search_paths
     # Pods for testing

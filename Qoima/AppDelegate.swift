@@ -8,7 +8,9 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import GoogleMaps
 
+let apiKey = "AIzaSyDsrt1fTvqjxzO4PyUSc2SYFx_qRVLnSkk"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
         window = UIWindow(frame: UIScreen.main.bounds)
+        GMSServices.provideAPIKey(apiKey)
 //        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: -1000.0, vertical: 0.0), for: .default)
         let navigationController = UINavigationController()
 ////        navigationController.navigationBar.isTranslucent = true

@@ -124,4 +124,33 @@ class NetworkLayer {
                }
            }
     }
+    
+    func planItem(id : Int, callback: @escaping (PlanResponse?) -> ()) {
+        Alamofire.request(Constants.shared().planitem + "?id=\(Helper.shared().getValue(byKey: "id") ?? "")&unique=\(Helper.shared().getToken())&item_id=\(id)", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseObject{
+               (response: DataResponse<PlanResponse>) in
+               if let _ = response.response{
+                   let model = response.result
+                   callback(model.value ?? nil)
+               }
+           }
+    }
+    func deliverItem(id : Int, callback: @escaping (PlanResponse?) -> ()) {
+          Alamofire.request(Constants.shared().deliverItem + "?id=\(Helper.shared().getValue(byKey: "id") ?? "")&unique=\(Helper.shared().getToken())&item_id=\(id)", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseObject{
+                 (response: DataResponse<PlanResponse>) in
+                 if let _ = response.response{
+                     let model = response.result
+                     callback(model.value ?? nil)
+                 }
+             }
+      }
+    
+    func getQoimaList(callback: @escaping (QoimaResponse?) -> ()) {
+        Alamofire.request(Constants.shared().qoimaList + "?id=\(Helper.shared().getValue(byKey: "id") ?? "")&unique=\(Helper.shared().getToken())", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseObject{
+               (response: DataResponse<QoimaResponse>) in
+               if let _ = response.response{
+                   let model = response.result
+                   callback(model.value ?? nil)
+               }
+           }
+    }
 }

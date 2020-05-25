@@ -87,6 +87,8 @@ class AddItemPresenter: AddItemPresenterProtocol {
     
     func addItemRequest(params: Parameters, image : UIImage) {
         var parameters: [String:Any] = params.getJson()
+        parameters["id"] = Helper.shared().getValue(byKey: "id")
+        parameters["unique"] = Helper.shared().getToken()
         self.uploadImage(image: image, params: parameters)
     }
     
@@ -102,8 +104,15 @@ class AddItemPresenter: AddItemPresenterProtocol {
     func uploadImage(image: UIImage, params : [String: Any]) {
         
         
-        let dat = NSKeyedArchiver.archivedData(withRootObject: params)
-
+//        let dat = NSKeyedArchiver.archivedData(withRootObject: params)
+        var dataExample: Data?
+        do {
+            let d = try NSKeyedArchiver.archivedData(withRootObject: params, requiringSecureCoding: false)
+            dataExample = d
+        } catch  {
+            print(error)
+        }
+//        let d = NSKeyedArchiver.archivedData(withRootObject: params, requiringSecureCoding: false)
         
         let url = URL(string: Constants.shared().addItem)
         
@@ -126,7 +135,13 @@ class AddItemPresenter: AddItemPresenterProtocol {
         data.append(image.pngData()!)
         
         data.append("\r\n--\(boundary)--\r\n".data(using: .utf8)!)
-        data.append(contentsOf: dat)
+//        data.append(contentsOf: dataExample!)
+        for (key, value) in params{
+            data.append("\r\n--\(boundary)\r\n".data(using: .utf8)!)
+            data.append("Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n".data(using: .utf8)!)
+            data.append("\(value)".data(using: .utf8)!)
+        }
+        
 //        data.append()
         // Send a POST request to the URL, with the data we created earlier
         session.uploadTask(with: urlRequest, from: data, completionHandler: { responseData, response, error in

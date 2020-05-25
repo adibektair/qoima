@@ -10,14 +10,19 @@ import UIKit
 
 class ItemCollectionViewCell: UICollectionViewCell {
 
+    
     @IBOutlet weak var statusLabel: UILabel!
-    @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var actionButton: UIButton!{
+        didSet{
+            self.actionButton.cornerRadius(radius: 5, width: 0)
+        }
+    }
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
 
 }
