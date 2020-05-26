@@ -29,7 +29,7 @@ class AddressViewController: UIViewController {
             self.showAlert(title: "Внимание", message: "Заполните все поля")
             return
         }
-        let json = ["user_id": Helper.shared().getValue(byKey: "id") ?? "", "unique" : Helper.shared().getToken(), "new_address" : addressTextField.text!] as [String : AnyObject]
+        let json = ["id": Helper.shared().getValue(byKey: "id") ?? "", "unique" : Helper.shared().getToken(), "new_address" : addressTextField.text!] as [String : AnyObject]
         self.startLoad()
         NetworkLayer.shared().updateAddress(params: json) { (data) in
             self.stopLoad()
