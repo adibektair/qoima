@@ -13,7 +13,9 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var controllers = [UIViewController]()
-
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
 
         
         let meditationNavigationController = UINavigationController()
@@ -35,7 +37,8 @@ class TabBarViewController: UITabBarController {
 
         coursesNav.navigationBar.isTranslucent = false
         let icon2 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "contacts"), selectedImage: #imageLiteral(resourceName: "contacts"))
-        coursesNav.addChild(ItemsViewController())
+
+        coursesNav.viewControllers.append(ItemsViewController())
         coursesNav.tabBarItem = icon2
         controllers.append(coursesNav)
         
@@ -46,10 +49,22 @@ class TabBarViewController: UITabBarController {
         mapNav.navigationBar.barTintColor = #colorLiteral(red: 0.1411764706, green: 0.1921568627, blue: 0.2235294118, alpha: 1)
 
         mapNav.navigationBar.isTranslucent = false
-        let icon = UITabBarItem(title: "", image: #imageLiteral(resourceName: "maps"), selectedImage: #imageLiteral(resourceName: "maps"))
-        mapNav.addChild(MapViewController())
+        let icon = UITabBarItem(title: "", image: #imageLiteral(resourceName: "maps-2"), selectedImage: #imageLiteral(resourceName: "maps-2"))
+        mapNav.viewControllers.append(MapViewController())
         mapNav.tabBarItem = icon
         controllers.append(mapNav)
+        
+        
+        
+        let profile = UINavigationController()
+        profile.navigationBar.backgroundColor = #colorLiteral(red: 0.1411764706, green: 0.1921568627, blue: 0.2235294118, alpha: 1)
+        profile.navigationBar.barTintColor = #colorLiteral(red: 0.1411764706, green: 0.1921568627, blue: 0.2235294118, alpha: 1)
+
+        profile.navigationBar.isTranslucent = false
+        let icon4 = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Profile-2"), selectedImage: #imageLiteral(resourceName: "Profile-2"))
+        profile.viewControllers.append(ProfileViewController())
+        profile.tabBarItem = icon4
+        controllers.append(profile)
         
         self.tabBar.tintColor = .white
         self.viewControllers = controllers
@@ -57,6 +72,7 @@ class TabBarViewController: UITabBarController {
         self.tabBar.backgroundColor = #colorLiteral(red: 0.1411764706, green: 0.1921568627, blue: 0.2235294118, alpha: 1)
         
     }
+    
     
 
     /*

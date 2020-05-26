@@ -153,4 +153,55 @@ class NetworkLayer {
                }
            }
     }
+    
+    func getUser(callback: @escaping (LoginResponse?) -> ()) {
+        Alamofire.request(Constants.shared().getUser + "?user_id=\(Helper.shared().getValue(byKey: "id") ?? "")&unique=\(Helper.shared().getToken())", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseObject{
+               (response: DataResponse<LoginResponse>) in
+               if let _ = response.response{
+                   let model = response.result
+                   callback(model.value ?? nil)
+               }
+           }
+    }
+    
+    func updateUser(params : [String: AnyObject], callback: @escaping (LoginResponse?) -> ()) {
+      Alamofire.request(Constants.shared().updateUser, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseObject{
+               (response: DataResponse<LoginResponse>) in
+               if let _ = response.response{
+                   let model = response.result
+                   callback(model.value ?? nil)
+               }
+           }
+    }
+    
+    func getNotifications(callback: @escaping (NotificationResponse?) -> ()) {
+        Alamofire.request(Constants.shared().getNotifications + "?id=\(Helper.shared().getValue(byKey: "id") ?? "")&unique=\(Helper.shared().getToken())", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseObject{
+               (response: DataResponse<NotificationResponse>) in
+               if let _ = response.response{
+                   let model = response.result
+                   callback(model.value ?? nil)
+               }
+           }
+    }
+    
+    func updatePassword(params : [String: AnyObject], callback: @escaping (StandartResponse?) -> ()) {
+      Alamofire.request(Constants.shared().updatePassword, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseObject{
+               (response: DataResponse<StandartResponse>) in
+               if let _ = response.response{
+                   let model = response.result
+                   callback(model.value ?? nil)
+               }
+           }
+    }
+    
+    
+    func updateAddress(params : [String: AnyObject], callback: @escaping (StandartResponse?) -> ()) {
+      Alamofire.request(Constants.shared().updateAddress, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseObject{
+               (response: DataResponse<StandartResponse>) in
+               if let _ = response.response{
+                   let model = response.result
+                   callback(model.value ?? nil)
+               }
+           }
+    }
 }

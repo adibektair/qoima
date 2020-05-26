@@ -22,7 +22,7 @@ class SingleItemViewController: ScrollStackController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setBackButton()
     }
     
     func setViews(){

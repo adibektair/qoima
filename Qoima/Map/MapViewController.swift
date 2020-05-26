@@ -18,9 +18,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+      
+        let image = #imageLiteral(resourceName: "toplogo-2")
+        let imageV = UIImageView(frame: CGRect(x: 0, y: 5, width: 38, height: 20))
+        imageV.contentMode = .scaleAspectFit
+        imageV.image = image
+        navigationItem.titleView = imageV
+        
         self.getList()
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
@@ -60,12 +67,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
 
 
     func mapView(_ mapView: GMSMapView, didLongPressInfoWindowOf marker: GMSMarker) {
-        for i in self.list{
-            if i.id! == marker.iconView!.tag{
-                QoimaViewController.open(vc: self, item: i)
-                return
-            }
-        }
+//        for i in self.list{
+//            if i.id! == marker.iconView!.tag{
+//                QoimaViewController.open(vc: self, item: i)
+//                return
+//            }
+//        }
         
     }
     func getList(){
@@ -88,5 +95,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             }
         }
     }
-
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        if (status == CLAuthorizationStatus.denied) {
+            // The user denied authorization
+        } else{
+            self.locationManager.startUpdatingLocation()
+            self.locationManager.stopUpdatingLocation()
+        }
+    }
 }

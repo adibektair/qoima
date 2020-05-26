@@ -19,6 +19,11 @@ class ItemsViewController: UIViewController, UICollectionViewDelegate, UICollect
         self.getData()
     }
     override func viewDidLoad() {
+        let image = #imageLiteral(resourceName: "toplogo-2")
+        let imageV = UIImageView(frame: CGRect(x: 0, y: 5, width: 38, height: 20))
+        imageV.contentMode = .scaleAspectFit
+        imageV.image = image
+        navigationItem.titleView = imageV
         
         self.view.backgroundColor = .white
         self.collectionView.backgroundColor = #colorLiteral(red: 0.8588235294, green: 0.8588235294, blue: 0.8588235294, alpha: 1)

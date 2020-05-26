@@ -133,3 +133,31 @@ class ScrollStackController: UIViewController {
         self.showAlert(title: "Внимание", message: text)
     }
 }
+extension UIViewController{
+    func startLoad(){
+            
+            let w = UIScreen.main.bounds.size.width
+            let h = UIScreen.main.bounds.size.height
+            dark.frame = CGRect(x: 0, y: 0, width: w, height: h)
+            dark.backgroundColor = UIColor.gray.withAlphaComponent(0.3)
+            small.frame.size = CGSize(width: w * 0.25, height: w * 0.25)
+            small.backgroundColor = UIColor.white
+            small.layer.cornerRadius = 15
+            small.center = dark.center
+              indicator.style = UIActivityIndicatorView.Style.medium
+            indicator.color = UIColor.black
+            indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
+            indicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+            let transform: CGAffineTransform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+            indicator.transform = transform
+            indicator.center = dark.center
+            dark.addSubview(small)
+            dark.addSubview(indicator)
+            view.addSubview(dark)
+            indicator.startAnimating()
+        }
+        func stopLoad(){
+            dark.removeFromSuperview()
+        }
+      
+}

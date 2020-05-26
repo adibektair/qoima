@@ -41,6 +41,24 @@
 		AA5EF74524633C0400A9BFD3 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF73D24633C0400A9BFD3 /* UIViewExtensions.swift */; };
 		AA5EF74824633C8300A9BFD3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5EF74724633C8300A9BFD3 /* Router.swift */; };
 		AAA5BBD6247B8FC7001B3E6C /* QoimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBD5247B8FC7001B3E6C /* QoimaViewController.swift */; };
+		AAA5BBDC247BB3DC001B3E6C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBDA247BB3DC001B3E6C /* ProfileViewController.swift */; };
+		AAA5BBDD247BB3DC001B3E6C /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBDB247BB3DC001B3E6C /* ProfileViewController.xib */; };
+		AAA5BBE0247BB45D001B3E6C /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBDE247BB45D001B3E6C /* ProfileTableViewCell.swift */; };
+		AAA5BBE1247BB45D001B3E6C /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBDF247BB45D001B3E6C /* ProfileTableViewCell.xib */; };
+		AAA5BBE4247BB657001B3E6C /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBE2247BB657001B3E6C /* MenuTableViewCell.swift */; };
+		AAA5BBE5247BB657001B3E6C /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBE3247BB657001B3E6C /* MenuTableViewCell.xib */; };
+		AAA5BBE8247BC51E001B3E6C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBE6247BC51E001B3E6C /* UserViewController.swift */; };
+		AAA5BBE9247BC51E001B3E6C /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBE7247BC51E001B3E6C /* UserViewController.xib */; };
+		AAA5BBEC247C074F001B3E6C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBEA247C074F001B3E6C /* NotificationsViewController.swift */; };
+		AAA5BBED247C074F001B3E6C /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBEB247C074F001B3E6C /* NotificationsViewController.xib */; };
+		AAA5BBF0247C0CFC001B3E6C /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBEE247C0CFC001B3E6C /* NotificationTableViewCell.swift */; };
+		AAA5BBF1247C0CFC001B3E6C /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBEF247C0CFC001B3E6C /* NotificationTableViewCell.xib */; };
+		AAA5BBF4247C1E1B001B3E6C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBF2247C1E1B001B3E6C /* SettingsViewController.swift */; };
+		AAA5BBF5247C1E1B001B3E6C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBF3247C1E1B001B3E6C /* SettingsViewController.xib */; };
+		AAA5BBF8247C2095001B3E6C /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBF6247C2095001B3E6C /* ChangePasswordViewController.swift */; };
+		AAA5BBF9247C2095001B3E6C /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBF7247C2095001B3E6C /* ChangePasswordViewController.xib */; };
+		AAA5BBFC247C2D71001B3E6C /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BBFA247C2D71001B3E6C /* AddressViewController.swift */; };
+		AAA5BBFD247C2D71001B3E6C /* AddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAA5BBFB247C2D71001B3E6C /* AddressViewController.xib */; };
 		AAE539512466E41D000B371B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE539502466E41D000B371B /* Button.swift */; };
 		AAE539542466EB68000B371B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE539532466EB68000B371B /* SignUpPresenter.swift */; };
 		AAE539562466EBFC000B371B /* SignUpRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE539552466EBFC000B371B /* SignUpRequestModel.swift */; };
@@ -113,6 +131,24 @@
 		AA5EF73D24633C0400A9BFD3 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		AA5EF74724633C8300A9BFD3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		AAA5BBD5247B8FC7001B3E6C /* QoimaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QoimaViewController.swift; sourceTree = "<group>"; };
+		AAA5BBDA247BB3DC001B3E6C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AAA5BBDB247BB3DC001B3E6C /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		AAA5BBDE247BB45D001B3E6C /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		AAA5BBDF247BB45D001B3E6C /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		AAA5BBE2247BB657001B3E6C /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		AAA5BBE3247BB657001B3E6C /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		AAA5BBE6247BC51E001B3E6C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		AAA5BBE7247BC51E001B3E6C /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		AAA5BBEA247C074F001B3E6C /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		AAA5BBEB247C074F001B3E6C /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		AAA5BBEE247C0CFC001B3E6C /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		AAA5BBEF247C0CFC001B3E6C /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		AAA5BBF2247C1E1B001B3E6C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AAA5BBF3247C1E1B001B3E6C /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		AAA5BBF6247C2095001B3E6C /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		AAA5BBF7247C2095001B3E6C /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		AAA5BBFA247C2D71001B3E6C /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		AAA5BBFB247C2D71001B3E6C /* AddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressViewController.xib; sourceTree = "<group>"; };
 		AAE539502466E41D000B371B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		AAE539532466EB68000B371B /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		AAE539552466EBFC000B371B /* SignUpRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequestModel.swift; sourceTree = "<group>"; };
@@ -248,6 +284,7 @@
 				AA5EF71324631D4000A9BFD3 /* AppDelegate.swift */,
 				AA5EF71524631D4000A9BFD3 /* SceneDelegate.swift */,
 				AA5EF71724631D4000A9BFD3 /* ViewController.swift */,
+				AAA5BBD7247B9FB5001B3E6C /* Profile */,
 				AA5EF71924631D4000A9BFD3 /* Main.storyboard */,
 				AA5EF71C24631D4500A9BFD3 /* Assets.xcassets */,
 				AA5EF71E24631D4500A9BFD3 /* LaunchScreen.storyboard */,
@@ -290,6 +327,31 @@
 				AA1E5CD0246486EB006F9F69 /* AuthBuilder.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		AAA5BBD7247B9FB5001B3E6C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AAA5BBDA247BB3DC001B3E6C /* ProfileViewController.swift */,
+				AAA5BBF6247C2095001B3E6C /* ChangePasswordViewController.swift */,
+				AAA5BBFA247C2D71001B3E6C /* AddressViewController.swift */,
+				AAA5BBFB247C2D71001B3E6C /* AddressViewController.xib */,
+				AAA5BBF7247C2095001B3E6C /* ChangePasswordViewController.xib */,
+				AAA5BBDE247BB45D001B3E6C /* ProfileTableViewCell.swift */,
+				AAA5BBDF247BB45D001B3E6C /* ProfileTableViewCell.xib */,
+				AAA5BBDB247BB3DC001B3E6C /* ProfileViewController.xib */,
+				AAA5BBE2247BB657001B3E6C /* MenuTableViewCell.swift */,
+				AAA5BBE3247BB657001B3E6C /* MenuTableViewCell.xib */,
+				AAA5BBE6247BC51E001B3E6C /* UserViewController.swift */,
+				AAA5BBE7247BC51E001B3E6C /* UserViewController.xib */,
+				AAA5BBEA247C074F001B3E6C /* NotificationsViewController.swift */,
+				AAA5BBEE247C0CFC001B3E6C /* NotificationTableViewCell.swift */,
+				AAA5BBEF247C0CFC001B3E6C /* NotificationTableViewCell.xib */,
+				AAA5BBEB247C074F001B3E6C /* NotificationsViewController.xib */,
+				AAA5BBF2247C1E1B001B3E6C /* SettingsViewController.swift */,
+				AAA5BBF3247C1E1B001B3E6C /* SettingsViewController.xib */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		AAE5394F2466E410000B371B /* Views */ = {
@@ -462,10 +524,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA5BBDD247BB3DC001B3E6C /* ProfileViewController.xib in Resources */,
+				AAA5BBF9247C2095001B3E6C /* ChangePasswordViewController.xib in Resources */,
+				AAA5BBED247C074F001B3E6C /* NotificationsViewController.xib in Resources */,
+				AAA5BBE9247BC51E001B3E6C /* UserViewController.xib in Resources */,
+				AAA5BBF1247C0CFC001B3E6C /* NotificationTableViewCell.xib in Resources */,
 				AA5EF72024631D4500A9BFD3 /* LaunchScreen.storyboard in Resources */,
 				AA3B87FB2469C5E300DD8D06 /* ItemsViewController.xib in Resources */,
+				AAA5BBFD247C2D71001B3E6C /* AddressViewController.xib in Resources */,
+				AAA5BBE1247BB45D001B3E6C /* ProfileTableViewCell.xib in Resources */,
+				AAA5BBF5247C1E1B001B3E6C /* SettingsViewController.xib in Resources */,
 				AA3B87FF2469C6B000DD8D06 /* ItemCollectionViewCell.xib in Resources */,
 				AA5EF71D24631D4500A9BFD3 /* Assets.xcassets in Resources */,
+				AAA5BBE5247BB657001B3E6C /* MenuTableViewCell.xib in Resources */,
 				AA5EF71B24631D4000A9BFD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,16 +639,21 @@
 				AAE5397624672A34000B371B /* TabBarViewController.swift in Sources */,
 				AA3B87EE246943A300DD8D06 /* AddItemPresenter.swift in Sources */,
 				AAE53963246707FB000B371B /* SignInPresenter.swift in Sources */,
+				AAA5BBE0247BB45D001B3E6C /* ProfileTableViewCell.swift in Sources */,
 				AAE5396D24672812000B371B /* MainRouter.swift in Sources */,
 				AAE5397424672967000B371B /* MainPageViewController.swift in Sources */,
 				AA3B87FE2469C6B000DD8D06 /* ItemCollectionViewCell.swift in Sources */,
+				AAA5BBDC247BB3DC001B3E6C /* ProfileViewController.swift in Sources */,
 				AA3B87F62469B9AB00DD8D06 /* AddItemResponse.swift in Sources */,
 				AA3B87F22469757300DD8D06 /* Categories.swift in Sources */,
 				AAE539542466EB68000B371B /* SignUpPresenter.swift in Sources */,
 				AAA5BBD6247B8FC7001B3E6C /* QoimaViewController.swift in Sources */,
+				AAA5BBF8247C2095001B3E6C /* ChangePasswordViewController.swift in Sources */,
 				AA5EF74524633C0400A9BFD3 /* UIViewExtensions.swift in Sources */,
 				AA5EF73F24633C0400A9BFD3 /* StackViewExtensions.swift in Sources */,
+				AAA5BBF0247C0CFC001B3E6C /* NotificationTableViewCell.swift in Sources */,
 				AAE5396F2467281A000B371B /* MainBuilder.swift in Sources */,
+				AAA5BBEC247C074F001B3E6C /* NotificationsViewController.swift in Sources */,
 				AA1E5CD1246486EB006F9F69 /* AuthBuilder.swift in Sources */,
 				AA32BC5C2471AD05006D422A /* MapViewController.swift in Sources */,
 				AAE5396A24670ED8000B371B /* Helper.swift in Sources */,
@@ -587,14 +663,17 @@
 				AA3B87FA2469C5E300DD8D06 /* ItemsViewController.swift in Sources */,
 				AA5EF74324633C0400A9BFD3 /* ScrollStackController.swift in Sources */,
 				AA3B87F024694E3E00DD8D06 /* Parameters.swift in Sources */,
+				AAA5BBE8247BC51E001B3E6C /* UserViewController.swift in Sources */,
 				AA32BC59246FF18F006D422A /* SingleItemViewController.swift in Sources */,
 				AAE5396524670925000B371B /* SignInViewController.swift in Sources */,
 				AA5EF74824633C8300A9BFD3 /* Router.swift in Sources */,
 				AA1E5CD624648901006F9F69 /* WelcomeViewController.swift in Sources */,
 				AA5EF74224633C0400A9BFD3 /* ViewExtensions.swift in Sources */,
 				AA5EF74124633C0400A9BFD3 /* ViewControllerExtension.swift in Sources */,
+				AAA5BBF4247C1E1B001B3E6C /* SettingsViewController.swift in Sources */,
 				AAE5395B2466FCEB000B371B /* Constants.swift in Sources */,
 				AAE539602467006B000B371B /* StandartResponse.swift in Sources */,
+				AAA5BBE4247BB657001B3E6C /* MenuTableViewCell.swift in Sources */,
 				AA5EF74024633C0400A9BFD3 /* StringExtension.swift in Sources */,
 				AA1E5CD9246489A5006F9F69 /* Slider.swift in Sources */,
 				AA1E5CD42464886C006F9F69 /* WelcomePresenter.swift in Sources */,
@@ -608,6 +687,7 @@
 				AA5EF71624631D4000A9BFD3 /* SceneDelegate.swift in Sources */,
 				AAE539512466E41D000B371B /* Button.swift in Sources */,
 				AA3B87EC2469439700DD8D06 /* AddItemViewController.swift in Sources */,
+				AAA5BBFC247C2D71001B3E6C /* AddressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -80,6 +80,7 @@ class User : NSObject, NSCoding, Mappable{
     var surname : String?
     var unique : String?
     var updatedAt : String?
+    var address : String?
 
 
     class func newInstance(map: Map) -> Mappable?{
@@ -99,7 +100,8 @@ class User : NSObject, NSCoding, Mappable{
         surname <- map["surname"]
         unique <- map["unique"]
         updatedAt <- map["updated_at"]
-        
+        address <- map["address"]
+
     }
 
     /**
@@ -117,6 +119,7 @@ class User : NSObject, NSCoding, Mappable{
          surname = aDecoder.decodeObject(forKey: "surname") as? String
          unique = aDecoder.decodeObject(forKey: "unique") as? String
          updatedAt = aDecoder.decodeObject(forKey: "updated_at") as? String
+        address = aDecoder.decodeObject(forKey: "address") as? String
 
     }
 

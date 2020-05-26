@@ -430,3 +430,122 @@ class Qoima : NSObject, NSCoding, Mappable{
     }
 
 }
+
+
+class Notifications : NSObject, NSCoding, Mappable{
+
+    var createdAt : AnyObject?
+    var date : String?
+    var id : Int?
+    var text : String?
+    var updatedAt : AnyObject?
+    var userID : Int?
+
+
+    class func newInstance(map: Map) -> Mappable?{
+        return Notifications()
+    }
+    required init?(map: Map){}
+    private override init(){}
+
+    func mapping(map: Map)
+    {
+        createdAt <- map["created_at"]
+        date <- map["date"]
+        id <- map["id"]
+        text <- map["text"]
+        updatedAt <- map["updated_at"]
+        userID <- map["userID"]
+        
+    }
+
+    /**
+    * NSCoding required initializer.
+    * Fills the data from the passed decoder
+    */
+    @objc required init(coder aDecoder: NSCoder)
+    {
+         createdAt = aDecoder.decodeObject(forKey: "created_at") as? AnyObject
+         date = aDecoder.decodeObject(forKey: "date") as? String
+         id = aDecoder.decodeObject(forKey: "id") as? Int
+         text = aDecoder.decodeObject(forKey: "text") as? String
+         updatedAt = aDecoder.decodeObject(forKey: "updated_at") as? AnyObject
+         userID = aDecoder.decodeObject(forKey: "userID") as? Int
+
+    }
+
+    /**
+    * NSCoding required method.
+    * Encodes mode properties into the decoder
+    */
+    @objc func encode(with aCoder: NSCoder)
+    {
+        if createdAt != nil{
+            aCoder.encode(createdAt, forKey: "created_at")
+        }
+        if date != nil{
+            aCoder.encode(date, forKey: "date")
+        }
+        if id != nil{
+            aCoder.encode(id, forKey: "id")
+        }
+        if text != nil{
+            aCoder.encode(text, forKey: "text")
+        }
+        if updatedAt != nil{
+            aCoder.encode(updatedAt, forKey: "updated_at")
+        }
+        if userID != nil{
+            aCoder.encode(userID, forKey: "userID")
+        }
+
+    }
+
+}
+
+class NotificationResponse : NSObject, NSCoding, Mappable{
+
+    var notifications : [Notifications]?
+    var success : Bool?
+
+
+    class func newInstance(map: Map) -> Mappable?{
+        return NotificationResponse()
+    }
+    required init?(map: Map){}
+    private override init(){}
+
+    func mapping(map: Map)
+    {
+        notifications <- map["notifications"]
+        success <- map["success"]
+        
+    }
+
+    /**
+    * NSCoding required initializer.
+    * Fills the data from the passed decoder
+    */
+    @objc required init(coder aDecoder: NSCoder)
+    {
+         notifications = aDecoder.decodeObject(forKey: "notifications") as? [Notifications]
+         success = aDecoder.decodeObject(forKey: "success") as? Bool
+
+    }
+
+    /**
+    * NSCoding required method.
+    * Encodes mode properties into the decoder
+    */
+    @objc func encode(with aCoder: NSCoder)
+    {
+        if notifications != nil{
+            aCoder.encode(notifications, forKey: "notifications")
+        }
+        if success != nil{
+            aCoder.encode(success, forKey: "success")
+        }
+
+    }
+
+}
