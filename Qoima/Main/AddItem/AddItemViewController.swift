@@ -106,6 +106,8 @@ class AddItemViewController: ScrollStackController, AddItemViewProtocol, UIImage
             present(imagePicker, animated: true, completion: nil)
         }
     }
+    let addButton = Button()
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         guard let image = info[.originalImage] as? UIImage else {
@@ -114,13 +116,13 @@ class AddItemViewController: ScrollStackController, AddItemViewProtocol, UIImage
         self.myImage = image
         self.stackView.addArrangedSubview(imageView)
         imageView.image = image
-//        imageView.easy.layout(Width(50), Height(50))
+        imageView.easy.layout(Width(250), Height(250))
         imageView.cornerRadius(radius: 10, width: 1)
-        let button = Button()
-        button.title = "Добавить"
-        button.type = .dark
-        button.button.addTarget(self, action: #selector(self.upload), for: .touchUpInside)
-        self.stackView.addArrangedSubview(button)
+        imageView.contentMode = .scaleAspectFit
+        addButton.title = "Добавить"
+        addButton.type = .dark
+        addButton.button.addTarget(self, action: #selector(self.upload), for: .touchUpInside)
+        self.stackView.addArrangedSubview(addButton)
     }
     
     @objc func upload(){
