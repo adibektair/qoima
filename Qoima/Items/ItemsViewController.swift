@@ -9,10 +9,11 @@
 import UIKit
 import SDWebImage
 
-class ItemsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ItemsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
 
     var items = [Items]()
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -20,6 +21,7 @@ class ItemsViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     override func viewDidLoad() {
         let image = #imageLiteral(resourceName: "toplogo-2")
+        self.searchBar.delegate = self
         let imageV = UIImageView(frame: CGRect(x: 0, y: 5, width: 38, height: 20))
         imageV.contentMode = .scaleAspectFit
         imageV.image = image
@@ -123,5 +125,24 @@ extension ItemsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let i = items[indexPath.row]
         SingleItemViewController.open(vc: self, item: i)
+    }
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        var temp = [Items]()
+        if searchBar.text! == ""{
+            self.view.endEditing(true)
+            return
+        }
+        for i in self.items{
+            if i.name!.contains(searchBar.text!){
+                temp.append(i)
+            }
+        }
+        self.items = temp
+        self.collectionView.reloadData()
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.view.endEditing(true)
     }
 }

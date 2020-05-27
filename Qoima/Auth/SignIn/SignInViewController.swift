@@ -28,6 +28,7 @@ class SignInViewController: ScrollStackController, SignInViewProtocol {
         self.stackView.setProperties(axis: .vertical, alignment: .fill, spacing: 20, distribution: .fill)
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "toplogo")
+        imageView.contentMode = .scaleAspectFit
         let imageV = UIView()
         imageV.addSubview(imageView)
         self.stackView.addArrangedSubview(imageView)

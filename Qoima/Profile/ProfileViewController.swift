@@ -15,7 +15,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     var user : User?
     let images : [UIImage] = [#imageLiteral(resourceName: "prof logo"), #imageLiteral(resourceName: "Icon"), #imageLiteral(resourceName: "Archive Icon (Stroke)"), #imageLiteral(resourceName: "Shape")]
-    let titles = ["Личный кабинет", "Мои уведомления", "Мои предметы", "Настройки"]
+    let titles = ["Profile", "Notifications", "Items", "Settings"]
     override func viewDidLoad() {
         super.viewDidLoad()
         let image = #imageLiteral(resourceName: "toplogo-2")
@@ -31,8 +31,34 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.startLoad()
         self.tabelView.allowsSelection = false
         self.tabelView.backgroundColor = .white
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "SignOut", style: .plain, target: self, action: #selector(btnShare_clicked))
+
     }
+    
+    
+    
+    @objc func btnShare_clicked() {
+        let alert = UIAlertController(title: "Sign out", message: "", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+           let navigationController = UINavigationController()
+           navigationController.navigationBar.isTranslucent = true
+            let builder = AuthBuilder()
+            let router = AuthRouter(navController: navigationController, builder: builder)
+            let mainViewController = builder.createAuth(router: router)
+            navigationController.viewControllers = [mainViewController]
+            navigationController.modalPresentationStyle = .fullScreen
+            Helper.shared().clear()
+            self.present(navigationController, animated: true, completion: nil)
+            
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: .destructive, handler: { action in
+           
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         NetworkLayer.shared().getUser { (response) in
             self.stopLoad()

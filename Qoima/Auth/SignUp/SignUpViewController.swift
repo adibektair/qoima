@@ -40,7 +40,7 @@ class SignUpViewController: ScrollStackController, SignUpViewProtocol {
         imageV.addSubview(imageView)
         self.stackView.addArrangedSubview(imageView)
         imageView.easy.layout(Height(54), Left(50), Right(50))
-        
+        imageView.contentMode = .scaleAspectFit
         nameTextField.borderStyle = .roundedRect
         nameTextField.backgroundColor = .white
         
