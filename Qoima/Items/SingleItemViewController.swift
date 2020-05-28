@@ -14,7 +14,10 @@ class SingleItemViewController: ScrollStackController {
 
     var item : Items?
     let button = Button()
-    
+    let datePicker = UIDatePicker()
+    var dateString = String()
+    var id = 0
+    var status = 0
     
     override func viewWillAppear(_ animated: Bool) {
         self.setViews()
@@ -55,12 +58,14 @@ class SingleItemViewController: ScrollStackController {
                 button.title = "Запланировать хранение"
                 button.button.tag = item!.id!
                 button.button.addTarget(self, action: #selector(self.planItem(_:)), for: .touchUpInside)
+                self.status = 1
 //                cell.actionButton.setTitle("Запланировать хранение", for: .normal)
             case 1:
                 statusLabel.text = "Cтатус: На складе"
                 button.title = "Заказать доставку"
                 button.button.tag = item!.id!
                 button.button.addTarget(self, action: #selector(self.deliverItem(_:)), for: .touchUpInside)
+                self.status = 2
 //                cell.actionButton.setTitle("Заказать доставку", for: .normal)
             case 2:
                 button.button.isHidden = true
@@ -92,24 +97,15 @@ class SingleItemViewController: ScrollStackController {
     
     @objc func planItem(_ sender : UIButton){
         let id = sender.tag
-        NetworkLayer.shared().planItem(id: id) { (response) in
-            if response?.success ?? false{
-                self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
-            }else{
-                self.showAlert(title: "Внимание", message: "ошибка")
-            }
-        }
+        self.id = id
+        self.showDatePicker()
     }
     
     @objc func deliverItem(_ sender : UIButton){
            let id = sender.tag
-           NetworkLayer.shared().deliverItem(id: id) { (response) in
-               if response?.success ?? false{
-                   self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
-               }else{
-                   self.showAlert(title: "Внимание", message: "ошибка")
-               }
-           }
+           self.id = id
+           self.showDatePicker()
+           
        }
     
     static func open(vc: UIViewController, item : Items) {
@@ -121,5 +117,63 @@ class SingleItemViewController: ScrollStackController {
         }
     }
 
+    func showDatePicker(){
+       //Formate Date
+       datePicker.datePickerMode = .date
 
+      //ToolBar
+      let toolbar = UIToolbar();
+      toolbar.sizeToFit()
+      let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donedatePicker));
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+     let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+
+    toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+
+        self.view.addSubview(dark)
+        dark.easy.layout(Edges())
+        dark.addSubview(datePicker)
+        datePicker.easy.layout(Center())
+        dark.addSubview(toolbar)
+        
+        toolbar.easy.layout(Bottom(0).to(datePicker), Width().like(datePicker), Height(50), CenterX())
+        toolbar.backgroundColor = .white
+        datePicker.backgroundColor = .white
+    }
+
+     @objc func donedatePicker(){
+  
+
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        self.dateString = formatter.string(from: datePicker.date)
+        self.view.endEditing(true)
+        if status == 1{
+            NetworkLayer.shared().planItem(id: self.id, date: dateString) { (response) in
+                  if response?.success ?? false{
+                      self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
+                    self.navigationController?.popViewController(animated: true)
+                  }else{
+                      self.showAlert(title: "Внимание", message: "ошибка")
+                  }
+              }
+        }else if status == 2{
+            NetworkLayer.shared().deliverItem(id: id, date: dateString) { (response) in
+                       if response?.success ?? false{
+                           self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
+                        self.navigationController?.popViewController(animated: true)
+                       }else{
+                           self.showAlert(title: "Внимание", message: "ошибка")
+                       }
+                }
+        }
+        
+       
+    }
+
+    @objc func cancelDatePicker(){
+        dark.removeFromSuperview()
+       
+     }
+    
 }

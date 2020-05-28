@@ -58,12 +58,12 @@ class ItemsViewController: UIViewController, UICollectionViewDelegate, UICollect
             switch status {
             case 0:
                 cell.statusLabel.text = "Новый"
-                cell.actionButton.tag = i.id!
+                cell.actionButton.tag = indexPath.row
                 cell.actionButton.addTarget(self, action: #selector(self.planItem(_:)), for: .touchUpInside)
                 cell.actionButton.setTitle("Запланировать хранение", for: .normal)
             case 1:
                 cell.statusLabel.text = "На складе"
-                cell.actionButton.tag = i.id!
+                cell.actionButton.tag = indexPath.row
                 cell.actionButton.addTarget(self, action: #selector(self.deliverItem(_:)), for: .touchUpInside)
                 cell.actionButton.setTitle("Заказать доставку", for: .normal)
             case 2:
@@ -88,26 +88,32 @@ class ItemsViewController: UIViewController, UICollectionViewDelegate, UICollect
 
     @objc func planItem(_ sender : UIButton){
         let id = sender.tag
-        NetworkLayer.shared().planItem(id: id) { (response) in
-            if response?.success ?? false{
-                self.getData()
-                self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
-            }else{
-                self.showAlert(title: "Внимание", message: "ошибка")
-            }
-        }
+        let i = items[id]
+        SingleItemViewController.open(vc: self, item: i)
+        
+//        NetworkLayer.shared().planItem(id: id) { (response) in
+//            if response?.success ?? false{
+//                self.getData()
+//                self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
+//            }else{
+//                self.showAlert(title: "Внимание", message: "ошибка")
+//            }
+//        }
     }
     
     @objc func deliverItem(_ sender : UIButton){
-           let id = sender.tag
-           NetworkLayer.shared().deliverItem(id: id) { (response) in
-               if response?.success ?? false{
-                   self.getData()
-                   self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
-               }else{
-                   self.showAlert(title: "Внимание", message: "ошибка")
-               }
-           }
+            let id = sender.tag
+        let i = items[id]
+        SingleItemViewController.open(vc: self, item: i)
+        
+//           NetworkLayer.shared().deliverItem(id: id) { (response) in
+//               if response?.success ?? false{
+//                   self.getData()
+//                   self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
+//               }else{
+//                   self.showAlert(title: "Внимание", message: "ошибка")
+//               }
+//           }
        }
 
 }
