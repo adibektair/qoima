@@ -19,19 +19,19 @@ class Constants: NSObject {
           return sharedReference
     }
     
-    public let registerRequest = "http://laravel.memento-mori.site/api/registeruser"
-    public let loginRequest = "http://laravel.memento-mori.site/api/login"
-    public let getCategories = "http://laravel.memento-mori.site/api/get/categories"
-    public let addItem = "http://laravel.memento-mori.site/api/additem"
-    public let getItems = "http://laravel.memento-mori.site/api/listofitems"
-    public let planitem = "http://laravel.memento-mori.site/api/planitem"
-    public let deliverItem = "http://laravel.memento-mori.site/api/deliveritem"
-    public let qoimaList = "http://laravel.memento-mori.site/api/qoima/list"
-    public let getUser = "http://laravel.memento-mori.site/api/userinfo"
-    public let updateUser = "http://laravel.memento-mori.site/api/updateuser"
-    public let getNotifications = "http://laravel.memento-mori.site/api/user/notifications"
-    public let updatePassword = "http://laravel.memento-mori.site/api/changepassword"
-    public let updateAddress = "http://laravel.memento-mori.site/api/changeaddress"
+    public let registerRequest = "https://laravel.memento-mori.site/api/registeruser"
+    public let loginRequest = "https://laravel.memento-mori.site/api/login"
+    public let getCategories = "https://laravel.memento-mori.site/api/get/categories"
+    public let addItem = "https://laravel.memento-mori.site/api/additem"
+    public let getItems = "https://laravel.memento-mori.site/api/listofitems"
+    public let planitem = "https://laravel.memento-mori.site/api/planitem"
+    public let deliverItem = "https://laravel.memento-mori.site/api/deliveritem"
+    public let qoimaList = "https://laravel.memento-mori.site/api/qoima/list"
+    public let getUser = "https://laravel.memento-mori.site/api/userinfo"
+    public let updateUser = "https://laravel.memento-mori.site/api/updateuser"
+    public let getNotifications = "https://laravel.memento-mori.site/api/user/notifications"
+    public let updatePassword = "https://laravel.memento-mori.site/api/changepassword"
+    public let updateAddress = "https://laravel.memento-mori.site/api/changeaddress"
 
 
 }

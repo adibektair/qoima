@@ -7,19 +7,24 @@
 //
 import GoogleMaps
 import UIKit
+import EasyPeasy
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate{
+class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate, UISearchBarDelegate{
 
     var list = [Qoima]()
     var zoom: Float = 16.0
     let locationManager = CLLocationManager()
     var mapView: GMSMapView!
+    var seachBar = UISearchBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationManager.requestWhenInUseAuthorization()
         locationManager.delegate = self
-      
+        self.seachBar.delegate = self
+        self.view.addSubview(seachBar)
+        seachBar.easy.layout(Top(0), Left(0), Right(0))
+        
         let image = #imageLiteral(resourceName: "toplogo-2")
         let imageV = UIImageView(frame: CGRect(x: 0, y: 5, width: 38, height: 20))
         imageV.contentMode = .scaleAspectFit
@@ -35,7 +40,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.delegate = self
 
-        view = mapView
+        view.addSubview(mapView)
+        mapView.easy.layout(Top(0).to(seachBar), Left(0), Right(), Bottom())
         // Do any additional setup after loading the view.
     }
     let myMarker = GMSMarker()
@@ -88,7 +94,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
                     marker.icon = #imageLiteral(resourceName: "Stock")
                     marker.zIndex = 100;
                     marker.map = self.mapView
-                    
+                    marker.accessibilityLabel = "\(item.id!)"
                     
                     self.locationManager.stopUpdatingLocation()
                 }
@@ -102,5 +108,30 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             self.locationManager.startUpdatingLocation()
             self.locationManager.stopUpdatingLocation()
         }
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.view.endEditing(true)
+        for i in self.list{
+            if i.name!.contains(searchBar.text!){
+                let l = CLLocationCoordinate2D(latitude: CLLocationDegrees(Double(i.latitude!.filter(".1234567890".contains))!), longitude: CLLocationDegrees(Double(i.longitude!.filter(".1234567890".contains))!))
+                let camera = GMSCameraPosition.camera(withLatitude: l.latitude, longitude: l.longitude, zoom: zoom)
+                mapView.camera = camera
+                mapView.animate(to: camera)
+                break
+            }
+        }
+    }
+    
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        let id = marker.accessibilityLabel
+        for i in self.list{
+            if "\(i.id ?? 0)" == id{
+//                QoimaViewController.open(vc: self, item: i)
+                break
+            }
+        }
+        return true
     }
 }

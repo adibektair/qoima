@@ -119,7 +119,7 @@ class SingleItemViewController: ScrollStackController {
 
     func showDatePicker(){
        //Formate Date
-       datePicker.datePickerMode = .date
+       datePicker.datePickerMode = .dateAndTime
 
       //ToolBar
       let toolbar = UIToolbar();
