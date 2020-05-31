@@ -128,7 +128,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         let id = marker.accessibilityLabel
         for i in self.list{
             if "\(i.id ?? 0)" == id{
-//                QoimaViewController.open(vc: self, item: i)
+                SingleQoimaViewController.open(vc: self, item: i)
                 break
             }
         }

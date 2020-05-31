@@ -20,7 +20,7 @@ class AddItemViewController: ScrollStackController, AddItemViewProtocol, UIImage
     var catId = Int()
     
     func succeeded() {
-        self.showError(text: "YEAP")
+        self.showAlert(title: "Done", message: "Item added", popToRoot: true)
     }
     
     let dropDown = DropDown()

@@ -151,7 +151,7 @@ class SingleItemViewController: ScrollStackController {
         if status == 1{
             NetworkLayer.shared().planItem(id: self.id, date: dateString) { (response) in
                   if response?.success ?? false{
-                      self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
+                      self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно", popToRoot: true)
                     self.navigationController?.popViewController(animated: true)
                   }else{
                       self.showAlert(title: "Внимание", message: "ошибка")
@@ -160,7 +160,7 @@ class SingleItemViewController: ScrollStackController {
         }else if status == 2{
             NetworkLayer.shared().deliverItem(id: id, date: dateString) { (response) in
                        if response?.success ?? false{
-                           self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно")
+                           self.showAlert(title: "Внимание", message: "Новый предмет добавлен успешно", popToRoot: true)
                         self.navigationController?.popViewController(animated: true)
                        }else{
                            self.showAlert(title: "Внимание", message: "ошибка")

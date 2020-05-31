@@ -333,6 +333,7 @@ class Qoima : NSObject, NSCoding, Mappable{
     var updatedAt : String?
     var urlAddress : String?
     var workingTime : String?
+    var website : String?
 
 
     class func newInstance(map: Map) -> Mappable?{
@@ -356,7 +357,8 @@ class Qoima : NSObject, NSCoding, Mappable{
         updatedAt <- map["updated_at"]
         urlAddress <- map["url_address"]
         workingTime <- map["working_time"]
-        
+        website <- map["website"]
+
     }
 
     /**

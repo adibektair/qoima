@@ -76,6 +76,8 @@
 		AAE5397424672967000B371B /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5397324672967000B371B /* MainPageViewController.swift */; };
 		AAE5397624672A34000B371B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5397524672A34000B371B /* TabBarViewController.swift */; };
 		E6FCD885EF285DA18A037DE2 /* Pods_QoimaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5603B827267D4DE98650DFAA /* Pods_QoimaTests.framework */; };
+		F2793D1E24841EC3005D7E0D /* SingleQoimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2793D1C24841EC3005D7E0D /* SingleQoimaViewController.swift */; };
+		F2793D1F24841EC3005D7E0D /* SingleQoimaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2793D1D24841EC3005D7E0D /* SingleQoimaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +168,8 @@
 		AAE5397324672967000B371B /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		AAE5397524672A34000B371B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C74DE5B619268FE085C327F0 /* Pods-QoimaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QoimaTests.debug.xcconfig"; path = "Target Support Files/Pods-QoimaTests/Pods-QoimaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2793D1C24841EC3005D7E0D /* SingleQoimaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQoimaViewController.swift; sourceTree = "<group>"; };
+		F2793D1D24841EC3005D7E0D /* SingleQoimaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleQoimaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 			children = (
 				AA32BC5B2471AD05006D422A /* MapViewController.swift */,
 				AAA5BBD5247B8FC7001B3E6C /* QoimaViewController.swift */,
+				F2793D1C24841EC3005D7E0D /* SingleQoimaViewController.swift */,
+				F2793D1D24841EC3005D7E0D /* SingleQoimaViewController.xib */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA5BBDD247BB3DC001B3E6C /* ProfileViewController.xib in Resources */,
+				F2793D1F24841EC3005D7E0D /* SingleQoimaViewController.xib in Resources */,
 				AAA5BBF9247C2095001B3E6C /* ChangePasswordViewController.xib in Resources */,
 				AAA5BBED247C074F001B3E6C /* NotificationsViewController.xib in Resources */,
 				AAA5BBE9247BC51E001B3E6C /* UserViewController.xib in Resources */,
@@ -665,6 +672,7 @@
 				AA3B87F024694E3E00DD8D06 /* Parameters.swift in Sources */,
 				AAA5BBE8247BC51E001B3E6C /* UserViewController.swift in Sources */,
 				AA32BC59246FF18F006D422A /* SingleItemViewController.swift in Sources */,
+				F2793D1E24841EC3005D7E0D /* SingleQoimaViewController.swift in Sources */,
 				AAE5396524670925000B371B /* SignInViewController.swift in Sources */,
 				AA5EF74824633C8300A9BFD3 /* Router.swift in Sources */,
 				AA1E5CD624648901006F9F69 /* WelcomeViewController.swift in Sources */,
